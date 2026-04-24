@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hero Section</title>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      /* MAIN CONTAINER (Flexbox) */
+      .container {
+        display: flex;
+        height: 100vh;
+      }
+
+      /* LEFT SIDE (Grid for content) */
+      .left {
+        flex: 1;
+        display: grid;
+        place-content: center;
+        padding: 40px;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: white;
+      }
+
+      /* RIGHT SIDE (Hero Image using background) */
+      .right {
+        flex: 1;
+        background-image: url("https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e");
+        background-size: cover;
+        background-position: center;
+      }
+
+      /* TEXT STYLING */
+      .left h1 {
+        font-size: 45px;
+        margin-bottom: 10px;
+      }
+
+      .left p {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+
+      .left button {
+        padding: 12px 25px;
+        border: none;
+        border-radius: 25px;
+        background: #ff7eb3;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      /* HOVER EFFECT */
+      .left button:hover {
+        background: #ff4e8a;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <div>
+          <h1>Hero Section</h1>
+          <p>Create beautiful UI using Flexbox and Grid.</p>
+          <button>Explore</button>
+        </div>
+      </div>
+      <div class="right"></div>
+    </div>
+  </body>
+</html>
